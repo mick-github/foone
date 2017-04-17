@@ -1,3 +1,7 @@
 .idea
 .DS_Store
+db_test.py
+principal.py
+*.pyc
+__pycache__
 

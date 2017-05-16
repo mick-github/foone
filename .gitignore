@@ -5,3 +5,4 @@ principal.py
 *.pyc
 __pycache__
 /templates/*
+/pages/original_pages/*

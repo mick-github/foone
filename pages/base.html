@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>Foone</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="base.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- should add a logo here -->
+                <img src="logo.gif" id="logo" alt="logo">
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <a href="blank.html"><span class="fa fa-file-o fa-fw"></span> 添加试题</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-edit fa-fw"></span> 修改试题</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <span class="fa fa-user fa-fw"></span> 用户操作 <span class="fa fa-caret-down"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><span class="fa fa-user fa-fw"></span> 个人主页</a></li>
+                        <li><a href="#"><span class="fa fa-gear fa-fw"></span> 修改密码</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="fa fa-list-alt fa-fw"></span> 用户列表</a></li>
+                        <li><a href="#"><span class="fa fa-plus-circle fa-fw"></span> 添加用户</a></li>
+                        <li><a href="#"><span class="fa fa-pencil-square fa-fw"></span> 修改用户</a></li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-sign-in fa-fw"></span> 登录</a>
+                </li>
+                <li>
+                    <a href="#" id="logout"><span class="fa fa-sign-out fa-fw"></span> 注销</a>
+                </li>
+                
+            </ul>
+            <!-- /.navbar-top-links -->
+        </nav>
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav">
+                        <li>
+                            <a><span class="fa fa-dashboard fa-fw"></span> <span id="dashboard">Dashboard</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav" id="side-menu">
+                        <!-- start of grade 6 fall -->
+                        <li>
+                            <a href="#" id="content_6-1"><i class="fa fa-hand-o-right fa-fw"></i> 预初 秋季<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" id="content_6-1-1">Unit 1: Family and relatives</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-1-2">Unit 2: I have a good friend</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-1-3">Unit 3: Spending a day out</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-1-4">Unit 4: What would you like to be?</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-1-5">Unit 5: Open Day</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-1-6">Unit 6: Going to school</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-1-7">Unit 7: Rules round us</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-1-8">Unit 8: The food we eat</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-1-9">Unit 9: Picnics are fun</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-1-10">Unit 10: Healthy eating</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end of grade 6 fall -->
+                        <!-- start of grade 6 spring -->
+                        <li>
+                            <a href="#" id="content_6-2"><i class="fa fa-hand-o-right fa-fw"></i> 预初 春季<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" id="content_6-2-1">Unit 1: Great cities in Asia</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-2-2">Unit 2: At the airport</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-2-3">Unit 3: Dragon Boat Festival</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-2-4">Unit 4: Staying healthy</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-2-5">Unit 5: What will I be like?</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-2-6">Unit 6: Seasonal changes</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-2-7">Unit 7: Travelling in Garden City</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-2-8">Unit 8: Windy weather</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-2-9">Unit 9: Sea water and rain water</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_6-2-10">Unit 10: Forests and land</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end of grade 6 spring -->
+                        <!-- start of grade 7 fall -->
+                        <li>
+                            <a href="#" id="content_7-1"><i class="fa fa-hand-o-right fa-fw"></i> 初一 秋季<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" id="content_7-1-1">Unit 1: Relatives in Beijing</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-1-2">Unit 2: Our animal friends</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-1-3">Unit 3: Friends from other countries</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-1-4">Unit 4: Jobs people do</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-1-5">Unit 5: Choosing a new flat</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-1-6">Unit 6: Different places</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-1-7">Unit 7: Signs around us</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-1-8">Unit 8: Growing healthy, growing strong</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-1-9">Unit 9: International Food</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-1-10">Unit 10: A birthday party</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" id="content_7-2"><i class="fa fa-hand-o-right fa-fw"></i> 初一 春季<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" id="content_7-2-1">Unit 1: Writing a travel guide</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-2-2">Unit 2: Going to see a film</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-2-3">Unit 3: A visit to Garden City</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-2-4">Unit 4: Let's go shopping</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-2-5">Unit 5: What can we learn from others?</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-2-6">Unit 6: Hard work for a better life</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-2-7">Unit 7: In the future</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-2-8">Unit 8: A more enjoyable school life</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-2-9">Unit 9: The wind is blowing</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_7-2-10">Unit 10: Water Festival</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end of grade 7 spring -->
+                        <!-- start of grade 8 fall -->
+                        <li>
+                            <a href="#" id="content_8-1"><i class="fa fa-hand-o-right fa-fw"></i> 初二 秋季<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" id="content_8-1-1">Unit 1: Penfriends</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-1-2">Unit 2: Work and play</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-1-3">Unit 3: Trouble!</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-1-4">Unit 4: Numbers</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-1-5">Unit 5: Encyclopaedias</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-1-6">Unit 6: Nobody wins (1)</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-1-7">Unit 7: Nobody wins (2)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end of grade 8 fall -->
+                        <!-- start of grade 8 spring -->
+                        <li>
+                            <a href="#" id="content_8-2"><i class="fa fa-hand-o-right fa-fw"></i> 初二 春季<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" id="content_8-2-1">Unit 1: Trees</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-2-2">Unit 2: Water</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-2-3">Unit 3: Electricity</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-2-4">Unit 4: Newspapers</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-2-5">Unit 5: Magazine articles</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-2-6">Unit 6: Travel</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_8-2-7">Unit 7: Poems</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end of grade 8 spring -->
+                        <!-- start of grade 9 fall -->
+                        <li>
+                            <a href="#" id="content_9-1"><i class="fa fa-hand-o-right fa-fw"></i> 初三 秋季<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" id="content_9-1-1">Unit 1: Ancient Greece</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_9-1-2">Unit 2: Traditional skills</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_9-1-3">Unit 3: Pets</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_9-1-4">Unit 4: Computers</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_9-1-5">Unit 5: The human brain</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_9-1-6">Unit 6: Detectives</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_9-1-7">Unit 7: Escaping from kidnappers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end of grade 9 fall -->
+                        <!-- start of grade 9 spring -->
+                        <li>
+                            <a href="#" id="content_9-2"><i class="fa fa-hand-o-right fa-fw"></i> 初三 春季<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" id="content_9-2-1">Unit 1: Saving the Earth</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_9-2-2">Unit 2: Life in the future</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_9-2-3">Unit 3: Going places</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_9-2-4">Unit 4: All about films and TV</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="content_9-2-5">Unit 5: A story by Mark Twain</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end of grade 9 spring -->
+                        <!-- start of entrance examination -->
+                        <li>
+                            <a href="#" id="exam_0"><i class="fa fa-hand-o-right fa-fw"></i> 中考<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#" id="exam_1">语音</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_2">动词<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#" id="exam_2-1">动词的分类</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" id="exam_2-2">动词的时态</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" id="exam_2-3">动词的语态</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" id="exam_2-4">非谓语动词</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_3">名词</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_4">代词</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_5">形容词 副词</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_6">数词</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_7">介词</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_8">连词</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_9">固定搭配</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_10">主谓一致</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_11">状语从句</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_12">宾语从句</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_13">定语从句</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_14">陈述句与疑问句</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_15">感叹句</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_16">连词成句</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_17">阅读四选一</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_18">阅读完型填空</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_19">阅读首字母</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_20">阅读回答问题</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_21">情景交际</a>
+                                </li>
+                                <li>
+                                    <a href="#" id="exam_22">作文</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12" id="tags">
+                    <h3 id="tagline"> 
+                        <span class="label label-info">难度</span>
+                        <button class="btn btn-primary btn-sm" id="one_star">一星</button>
+                        <button class="btn btn-primary btn-sm" id="two_star">二星</button>
+                        <button class="btn btn-primary btn-sm" id="three_star">三星</button>
+                        <button class="btn btn-primary btn-sm" id="four_star">四星</button>
+                        <button class="btn btn-primary btn-sm" id="five_star">五星</button>
+                    </h3>
+                    <h3 id="tagline">
+                        <span class="label label-info">来源</span>
+                        <button class="btn btn-primary btn-sm" id="real">中考真题</button>
+                        <button class="btn btn-primary btn-sm" id="mock">中考模拟</button>
+                        <button class="btn btn-primary btn-sm" id="review">中考复习</button>
+                        <button class="btn btn-primary btn-sm" id="final">期末试题</button>
+                        <button class="btn btn-primary btn-sm" id="midterm">期中试题</button>
+                        <button class="btn btn-primary btn-sm" id="monthly">月考试题</button>
+                        <button class="btn btn-primary btn-sm" id="exercise">同步练习</button>
+                        <button class="btn btn-primary btn-sm" id="unit">单元检测</button>
+                        <button class="btn btn-primary btn-sm" id="independent">自主招生</button>
+                    </h3>
+                    <hr>
+                </div>
+                <!-- /.tags -->
+            </div>
+            <!-- /.row -->
+            <!-- This is the place for templates --> 
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <!--<script src="../vendor/metisMenu/metisMenu.min.js"></script>-->
+    <script src="https://cdn.bootcss.com/metisMenu/2.7.0/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="base.js"></script>
+
+</body>
+
+</html>

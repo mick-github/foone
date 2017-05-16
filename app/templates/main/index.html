@@ -1,0 +1,18 @@
+{% extends "main/main_base.html" %}
+
+{% block title %}Problem Main{% endblock %}
+
+{% block page_content %}
+<h3>Test</h3>
+{% if content %}
+{% for problem in content %}
+<div class="container">
+  <p>Question: {{ problem.question }}</p>
+  <p>Explain: {{ problem.explain }}</p>
+  <p>Answer: {{ problem.answer }}</p>
+</div>
+{% endfor %}
+{% else %}
+<p>No problem in the database.</p>
+{% endif %}
+{% endblock %}

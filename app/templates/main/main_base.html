@@ -1,0 +1,358 @@
+{% extends "base.html" %}
+
+{% block title %}Foone{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <!-- This part is the left-hand navigator -->
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="{{ url_for('main.index', grade='6_1') }}"
+                 data-toggle="collapse" data-parent="#accordion">Grade 6
+                Fall</a>
+            </h4>
+          </div>
+          <div id="collapse-6-1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <!--<ul class="list-group">-->
+                <a href="{{ url_for('main.index', grade='6_1', unit=1) }}"
+                   >Unit 1: Family and relatives</a><br>
+                <a href="{{ url_for('main.index', grade='6_1', unit=2) }}"
+                   >Unit 2: I have a good friend</a><br>
+                <a href="{{ url_for('main.index', grade='6_1', unit=3) }}"
+                   >Unit 3: Spending a day out together</a><br>
+                <a href="{{ url_for('main.index', grade='6_1', unit=4) }}"
+                   >Unit 4: What would you like to be?</a><br>
+                <a href="{{ url_for('main.index', grade='6_1', unit=5) }}"
+                   >Unit 5: Open Day</a><br>
+                <a href="{{ url_for('main.index', grade='6_1', unit=6) }}"
+                   >Unit 6: Going to school</a><br>
+                <a href="{{ url_for('main.index', grade='6_1', unit=7) }}"
+                   >Unit 7: Rules round us</a><br>
+                <a href="{{ url_for('main.index', grade='6_1', unit=8) }}"
+                   >Unit 8: The food we eat</a><br>
+                <a href="{{ url_for('main.index', grade='6_1', unit=9) }}"
+                   >Unit 9: Picnics are fun</a><br>
+                <a href="{{ url_for('main.index', grade='6_1', unit=10) }}"
+                   >Unit 10: Healthy eating</a><br>
+              <!--</ul>-->
+            </div>
+          </div>
+        </div><div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="{{ url_for('main.index', grade='6_2') }}"
+                 data-toggle="collapse" data-parent="#accordion">Grade 6
+                Spring</a>
+            </h4>
+          </div>
+          <div id="collapse-6-2" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <a href="{{ url_for('main.index', grade='6_2', unit=1) }}"
+                   class="list-group-item">Unit 1: Great cities in Asia</a>
+                <a href="{{ url_for('main.index', grade='6_2', unit=2) }}"
+                   class="list-group-item">Unit 2: At the airport</a>
+                <a href="{{ url_for('main.index', grade='6_2', unit=3) }}"
+                   class="list-group-item">Unit 3: Dragon Boat Festival</a>
+                <a href="{{ url_for('main.index', grade='6_2', unit=4) }}"
+                   class="list-group-item">Unit 4: Staying healthy</a>
+                <a href="{{ url_for('main.index', grade='6_2', unit=5) }}"
+                   class="list-group-item">Unit 5: What will I be like?</a>
+                <a href="{{ url_for('main.index', grade='6_2', unit=6) }}"
+                   class="list-group-item">Unit 6: Seasonal changes</a>
+                <a href="{{ url_for('main.index', grade='6_2', unit=7) }}"
+                   class="list-group-item">Unit 7: Travelling in Garden City</a>
+                <a href="{{ url_for('main.index', grade='6_2', unit=8) }}"
+                   class="list-group-item">Unit 8: Windy weather</a>
+                <a href="{{ url_for('main.index', grade='6_2', unit=9) }}"
+                   class="list-group-item">Unit 9: Sea water and rain water</a>
+                <a href="{{ url_for('main.index', grade='6_2', unit=10) }}"
+                   class="list-group-item">Unit 10: Forests and land</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="{{ url_for('main.index', grade='7_1') }}"
+                 data-toggle="collapse" data-parent="#accordion">Grade 7
+                Fall</a>
+            </h4>
+          </div>
+          <div id="collapse-7-1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <a href="{{ url_for('main.index', grade='7_1', unit=1) }}"
+                   class="list-group-item">Unit 1: Relatives in Beijing</a>
+                <a href="{{ url_for('main.index', grade='7_1', unit=2) }}"
+                   class="list-group-item">Unit 2: Our animal friends</a>
+                <a href="{{ url_for('main.index', grade='7_1', unit=3) }}"
+                   class="list-group-item">Unit 3: Friends from other
+                  countries</a>
+                <a href="{{ url_for('main.index', grade='7_1', unit=4) }}"
+                   class="list-group-item">Unit 4: Jobs people do</a>
+                <a href="{{ url_for('main.index', grade='7_1', unit=5) }}"
+                   class="list-group-item">Unit 5: Different places</a>
+                <a href="{{ url_for('main.index', grade='7_1', unit=6) }}"
+                   class="list-group-item">Unit 6: Different places</a>
+                <a href="{{ url_for('main.index', grade='7_1', unit=7) }}"
+                   class="list-group-item">Unit 7: Signs around us</a>
+                <a href="{{ url_for('main.index', grade='7_1', unit=8) }}"
+                   class="list-group-item">Unit 8: Growing healthy, growing
+                  strong</a>
+                <a href="{{ url_for('main.index', grade='7_1', unit=9) }}"
+                   class="list-group-item">Unit 9: Internationaal Food
+                  Festival</a>
+                <a href="{{ url_for('main.index', grade='7_1', unit=10) }}"
+                   class="list-group-item">Unit 10: A birthday parth</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="{{ url_for('main.index', grade='7_2') }}"
+                 data-toggle="collapse" data-parent="#accordion">Grade 7
+                Spring</a>
+            </h4>
+          </div>
+          <div id="collapse-7-2" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <a href="{{ url_for('main.index', grade='7_2', unit=1) }}"
+                   class="list-group-item">Unit 1: Writing a travel guide</a>
+                <a href="{{ url_for('main.index', grade='7_2', unit=2) }}"
+                   class="list-group-item">Unit 2: Going to see a film</a>
+                <a href="{{ url_for('main.index', grade='7_2', unit=3) }}"
+                   class="list-group-item">Unit 3: A visit to Garden City</a>
+                <a href="{{ url_for('main.index', grade='7_2', unit=4) }}"
+                   class="list-group-item">Unit 4: Let's go shopping</a>
+                <a href="{{ url_for('main.index', grade='7_2', unit=5) }}"
+                   class="list-group-item">Unit 5: What can we learn from
+                  others?</a>
+                <a href="{{ url_for('main.index', grade='7_2', unit=6) }}"
+                   class="list-group-item">Unit 6: Hard work for a better life</a>
+                <a href="{{ url_for('main.index', grade='7_2', unit=7) }}"
+                   class="list-group-item">Unit 7: In the future</a>
+                <a href="{{ url_for('main.index', grade='7_2', unit=8) }}"
+                   class="list-group-item">Unit 8: A more enjoyable school
+                  life</a>
+                <a href="{{ url_for('main.index', grade='7_2', unit=9) }}"
+                   class="list-group-item">Unit 9: The wind is blowing</a>
+                <a href="{{ url_for('main.index', grade='7_2', unit=10) }}"
+                   class="list-group-item">Unit 10: Water Festival</a>
+              </ul>
+            </div>
+          </div>
+        </div><div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="{{ url_for('main.index', grade='8_1') }}"
+                 data-toggle="collapse" data-parent="#accordion">Grade 8
+                Fall</a>
+            </h4>
+          </div>
+          <div id="collapse-8-1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <a href="{{ url_for('main.index', grade='8_1', unit=1) }}"
+                   class="list-group-item">Unit 1: Penfriends</a>
+                <a href="{{ url_for('main.index', grade='8_1', unit=2) }}"
+                   class="list-group-item">Unit 2: Work and play</a>
+                <a href="{{ url_for('main.index', grade='8_1', unit=3) }}"
+                   class="list-group-item">Unit 3: Trouble!</a>
+                <a href="{{ url_for('main.index', grade='8_1', unit=4) }}"
+                   class="list-group-item">Unit 4: Numbers</a>
+                <a href="{{ url_for('main.index', grade='8_1', unit=5) }}"
+                   class="list-group-item">Unit 5: Encyclopedias</a>
+                <a href="{{ url_for('main.index', grade='8_1', unit=6) }}"
+                   class="list-group-item">Unit 6: Nobody wins (1)</a>
+                <a href="{{ url_for('main.index', grade='8_1', unit=7) }}"
+                   class="list-group-item">Unit 7: Nobody wins (2)</a>
+              </ul>
+            </div>
+          </div>
+        </div><div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="{{ url_for('main.index', grade='8_2') }}"
+                 data-toggle="collapse" data-parent="#accordion">Grade 8
+                Spring</a>
+            </h4>
+          </div>
+          <div id="collapse-8-2" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <a href="{{ url_for('main.index', grade='8_2', unit=1) }}"
+                   class="list-group-item">Unit 1: Tress</a>
+                <a href="{{ url_for('main.index', grade='8_2', unit=2) }}"
+                   class="list-group-item">Unit 2: Water</a>
+                <a href="{{ url_for('main.index', grade='8_2', unit=3) }}"
+                   class="list-group-item">Unit 3: Electricity</a>
+                <a href="{{ url_for('main.index', grade='8_2', unit=4) }}"
+                   class="list-group-item">Unit 4: Newspapers</a>
+                <a href="{{ url_for('main.index', grade='8_2', unit=5) }}"
+                   class="list-group-item">Unit 5: Magazine articles</a>
+                <a href="{{ url_for('main.index', grade='8_2', unit=6) }}"
+                   class="list-group-item">Unit 6: Travel</a>
+                <a href="{{ url_for('main.index', grade='8_2', unit=7) }}"
+                   class="list-group-item">Unit 7: Poems</a>
+              </ul>
+            </div>
+          </div>
+        </div><div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="{{ url_for('main.index', grade='9_1') }}"
+                 data-toggle="collapse" data-parent="#accordion">Grade 9
+                Fall</a>
+            </h4>
+          </div>
+          <div id="collapse-9-1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <a href="{{ url_for('main.index', grade='9_1', unit=1) }}"
+                   class="list-group-item">Unit 1: Ancient Greece</a>
+                <a href="{{ url_for('main.index', grade='9_1', unit=2) }}"
+                   class="list-group-item">Unit 2: Traditional skills</a>
+                <a href="{{ url_for('main.index', grade='9_1', unit=3) }}"
+                   class="list-group-item">Unit 3: Pets</a>
+                <a href="{{ url_for('main.index', grade='9_1', unit=4) }}"
+                   class="list-group-item">Unit 4: Computers</a>
+                <a href="{{ url_for('main.index', grade='9_1', unit=5) }}"
+                   class="list-group-item">Unit 5: The human brain</a>
+                <a href="{{ url_for('main.index', grade='9_1', unit=6) }}"
+                   class="list-group-item">Unit 6: Detectives</a>
+                <a href="{{ url_for('main.index', grade='9_1', unit=7) }}"
+                   class="list-group-item">Unit 7: Escaping from kidnappers</a>
+              </ul>
+            </div>
+          </div>
+        </div><div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="{{ url_for('main.index', grade='9_2') }}"
+                 data-toggle="collapse" data-parent="#accordion">Grade 9
+                Spring</a>
+            </h4>
+          </div>
+          <div id="collapse-9-2" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <ul class="list-group">
+                <a href="{{ url_for('main.index', grade='9_2', unit=1) }}"
+                   class="list-group-item">Unit 1: Saving the Earth</a>
+                <a href="{{ url_for('main.index', grade='9_2', unit=2) }}"
+                   class="list-group-item">Unit 2: Life in the future</a>
+                <a href="{{ url_for('main.index', grade='9_2', unit=3) }}"
+                   class="list-group-item">Unit 3: Going places</a>
+                <a href="{{ url_for('main.index', grade='9_2', unit=4) }}"
+                   class="list-group-item">Unit 4: All about films and TV</a>
+                <a href="{{ url_for('main.index', grade='9_2', unit=5) }}"
+                   class="list-group-item">Unit 5: A story by Mark Twain</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <!-- This part is the displaying area -->
+      <!-- filters by tags -->
+      <div class="container">
+        <h4>
+          <span class="label label-primary">题型</span>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='listening') }}">听力</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='grammar') }}">语法单选</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='word_choose') }}">选词填空</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='word_trans') }}">词形转换</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='senten_trans') }}">句型转换</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='word_senten') }}">连词成句</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='multiple') }}">阅读四选一</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='close') }}">阅读完形填空</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='init_letter') }}">阅读首字母</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='question') }}">阅读回答问题</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='composition') }}">作文</a>
+        </h4>
+        <h4>
+          <span class="label label-primary">年级</span>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='grade6') }}">预初</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='grade7') }}">初一</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='grade8') }}">初二</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='grade9') }}">初三</a>
+        </h4>
+        <h4>
+          <span class="label label-primary">难度</span>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='onestar') }}">一星</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='twostar') }}">二星</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='threestar') }}">三星</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='fourstar') }}">四星</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='fivestar') }}">五星</a>
+        </h4>
+        <h4>
+          <span class="label label-primary">来源</span>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='entrance_real') }}">中考真题</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='entrance_mock') }}">中考模拟</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='entrance_review') }}">中考复习</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='term_end') }}">期末试题</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='term_mid') }}">期中试题</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='term_month') }}">月考试题</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='term_daily') }}">同步练习</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='unit') }}">单元检测</a>
+          <a class="btn btn-default btn-xs"
+             href="{{ url_for('main.index', type='independ') }}">自主招生</a>
+        </h4>
+      </div>
+      <hr>
+      <!-- Flash messages -->
+      {% for message in get_flashed_messages() %}
+      <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+      </div>
+      {% endfor %}
+      
+      <!-- Real content -->
+      {% block page_content %}{% endblock %}
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+{% endblock %}

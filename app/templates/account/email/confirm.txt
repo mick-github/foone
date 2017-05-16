@@ -1,0 +1,11 @@
+Dear {{ user.username }}
+
+Welcome to Foone!
+
+To finish setting up your account, please click on the following link:
+
+{{ url_for('accounts.set_password', token=token, _external=True) }}
+
+Sincerely,
+
+The Foone Website Team

@@ -4,4 +4,4 @@ db_test.py
 principal.py
 *.pyc
 __pycache__
-
+/templates/*

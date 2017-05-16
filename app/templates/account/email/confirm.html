@@ -1,0 +1,5 @@
+<p>Dear {{ user.username }}</p>
+<p>Welcome to <b>Foone</b></p>
+<p>To finish setting up your account, please click on the following link:</p>
+<p>{{ url_for('accounts.set_password', token=token, _external=True) }}</p>
+<p>Sincerely,</p>
